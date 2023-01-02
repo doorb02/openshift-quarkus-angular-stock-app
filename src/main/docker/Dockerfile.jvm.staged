@@ -19,7 +19,7 @@
 ###
 FROM registry.access.redhat.com/ubi8/openjdk-11:latest
 
-# USER root
+USER root
 WORKDIR /build
 RUN mkdir -p .mvn/wrapper
 # Build dependency offline to streamline build
